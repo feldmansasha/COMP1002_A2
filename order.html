@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is the order page of our pizzeria">
+        <title>Order a Pizza</title>
+        <meta name="robots" content="noindex, no follow">
+        <link rel="stylesheet" href="./css/style2.css">
+        <script src="./js/class-js.js"></script>
+    </head>
+    <body>
+      <header>
+        <nav>
+            <menu>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Place order</a></li>
+                <li><a href="#" onclick="alertUser('Our phone: 705-123-4567')">Contact</a></li>
+            </menu>
+        </nav>
+      </header>
+        <section class="row_1">
+          <div>
+            <h2>Veggie</h2>
+            <img src="./img/veggie.jpg" alt="veggie pizza">
+          </div>
+          <div>
+            <h2>Pepperoni</h2>
+            <img src="./img/pepperoni.jpg" alt="pepperoni pizza">
+          </div>
+          <div>
+            <h2>Brooklyn</h2>
+            <img src="./img/brooklyn.jpg" alt="brooklyn pizza">
+          </div>
+        </section>
+        <section class="row_2">
+          <div>
+            <h2>BBQ Chicken</h2>
+            <img src="./img/bbq.jpg" alt="bbq pizza">
+          </div>
+          <div>
+            <h2>Hawaiian</h2>
+            <img src="./img/hawaiian.jpg" alt="hawaiian pizza">
+          </div>
+          <div>
+            <h2>Deluxe</h2>
+            <img src="./img/deluxe.jpg" alt="deluxe pizza">
+          </div>
+        </section>
+        <form>
+        <section class="details">
+          <div>
+              <h3>Contact details</h3>
+              <label>Your name</label>
+              <br>
+              <input type="text" name="name" placeholder="Name*" required>
+              <br>
+              <label>Email</label>
+              <br>
+              <input type="email" name="email" placeholder="Personal email*" required>
+              <br>
+              <label for="telephone">Your phone number:</label>
+              <br>
+              <input type="tel" id="telephone" name="telephone" 
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="705-123-4567" required>
+              <br>
+              <label>Address</label>
+              <br>
+              <input type="text">
+          </div>
+          <div>
+              <h3>Pizza choice</h3>
+              <label for="pizza">Choose pizza</label>
+              <select class="select" id="pizza" name="pizzas">
+                <option value="veggie">Veggie</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="brooklyn">Brooklyn</option>
+                <option value="BBQ">BBQ</option>
+                <option value="hawaiian">Hawaiian</option>
+                <option value="Deluxe">Deluxe</option>
+              </select>
+              <br>
+              <input type="radio" id="small" name="size" value="1" required>
+              <label for="small">Small</label>
+              <input type="radio" id="medium" name="size" value="2">
+              <label for="medium">Medium</label>
+              <input type="radio" id="big" name="size" value="3">
+              <label for="big">Big</label>
+              <br>
+              <div class="quantity">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="4" required>
+              </div>
+        
+          </div>
+      </section>
+      <section class="send">
+        <h2>Send your order</h2>
+        <input type="reset">
+        <input type="submit" value="Submit Form">
+      </section>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+header{
+    width: auto;
+    height: 15vh;
+    display: grid;
+    align-items: center;
+    background-color: gray;
+  }
+  
+  header>nav>menu{
+    display: grid;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 33%);
+  }
+  header>nav>menu>li>a{
+    color: orange;
+    text-decoration: none;
+  }
+p,a,li,figcaption{
+    font-size: 4vh;
+  }
+.greetings{
+    color:white;
+    height: 85vh;
+    background-image: url("../img/back.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.greetings div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,.7);
+    height: 100%;
+}
+.greetings div h1{
+    font-size: 7vh;
+    text-align: center;
+    color:orange;
+}

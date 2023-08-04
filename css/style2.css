@@ -1,0 +1,61 @@
+header{
+  width: auto;
+  height: 15vh;
+  display: grid;
+  align-items: center;
+  background-color: gray;
+}
+
+header>nav>menu{
+  display: grid;
+  list-style: none;
+  text-align: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 33%);
+}
+header>nav>menu>li>a{
+  color: orange;
+  text-decoration: none;
+}
+p,a,li,figcaption{
+    font-size: 4vh;
+}
+.row_1 {
+    display:grid;
+    grid-template-columns: repeat(3, 33%);
+    text-align: center;
+    margin-top: 5vh;
+}
+.row_2 {
+  display:grid;
+  grid-template-columns: repeat(3, 33%);
+  text-align: center;
+  margin-top: 5vh;
+}
+
+body > section > div > img{
+  width: 80%;
+  height: auto;
+}
+.details{
+  display:grid;
+  grid-template-columns: repeat(2, 50%);
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  font-size: 3.5vh;
+}
+body{
+  background-color:honeydew;
+}
+.send{
+  text-align: center;
+  margin-bottom: 5vh;
+}
+.select{
+  margin-bottom: 5vh;
+}
+.quantity{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
